@@ -11,7 +11,7 @@ model = load_model("potatoes.h5")
 
 # Initialize the Flask app
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": ["http://localhost", "http://localhost:5173"]}})
+# CORS(app, resources={r"/*": {"origins": ["http://localhost", "http://localhost:5173"]}})
 
 # Class names for prediction
 cl = ['Potato___Early_blight', 'Potato___Late_blight', 'Potato___healthy']
